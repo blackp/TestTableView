@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hWQ-wK-7TF">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="z47-dn-fIX">
+            <objects>
+                <tableViewController id="hWQ-wK-7TF" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="22" sectionFooterHeight="22" id="h1h-ao-dVY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TestCell" rowHeight="69" id="Ui0-I8-kM9" customClass="TableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ui0-I8-kM9" id="So6-oX-ut2">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLt-iI-4EE">
+                                            <rect key="frame" x="8" y="8" width="584" height="31"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AdR-1c-UKo">
+                                            <rect key="frame" x="8" y="39" width="584" height="21"/>
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="dLt-iI-4EE" firstAttribute="top" secondItem="So6-oX-ut2" secondAttribute="topMargin" id="G5q-zK-Vd3"/>
+                                        <constraint firstItem="AdR-1c-UKo" firstAttribute="leading" secondItem="So6-oX-ut2" secondAttribute="leadingMargin" id="Om4-Uw-7Ys"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="AdR-1c-UKo" secondAttribute="trailing" id="d3r-U4-eFf"/>
+                                        <constraint firstItem="AdR-1c-UKo" firstAttribute="top" secondItem="dLt-iI-4EE" secondAttribute="bottom" id="dzF-fv-dng"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="dLt-iI-4EE" secondAttribute="trailing" id="fWj-of-alw"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="AdR-1c-UKo" secondAttribute="bottom" id="mjh-zM-xQb"/>
+                                        <constraint firstItem="dLt-iI-4EE" firstAttribute="leading" secondItem="So6-oX-ut2" secondAttribute="leadingMargin" id="sz3-2L-jtv"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="anotherLabel" destination="AdR-1c-UKo" id="F3h-Ot-Y6I"/>
+                                    <outlet property="label" destination="dLt-iI-4EE" id="0go-OX-CPE"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hWQ-wK-7TF" id="Eh2-MX-mFm"/>
+                            <outlet property="delegate" destination="hWQ-wK-7TF" id="vM1-F2-V9m"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="28B-pc-eDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="331"/>
+        </scene>
+    </scenes>
+</document>
